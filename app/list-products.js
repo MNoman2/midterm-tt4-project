@@ -1,9 +1,9 @@
-import './index.scss';
+import './list-products.scss';
 
 // images
-import enginakyurt from "./assets/images/p2.jpg";
-import quangVietNguyen from "./assets/images/p10.jpg";
-import yaazhini from "./assets/images/p12.jpg";
+import p2 from "./assets/images/p2.jpg";
+import p10 from "./assets/images/p10.jpg";
+import p12 from "./assets/images/p12.jpg";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             name: 'Fujfilm Camera',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: enginakyurt
+            image: p2
         },
         {
             name: 'Canon Camera',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: quangVietNguyen
+            image: p10
         },
         {
             name: 'Nikon Camera',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: yaazhini
+            image: p12
         }
     ];
 

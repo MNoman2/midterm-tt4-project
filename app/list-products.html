@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm TT4 - Simulation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="list-products.html">List</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Messages</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Your Name</a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#!">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div id="content" class="container-fluid p-5">
+                <!-- <h1 class="mt-4">Simple Sidebar</h1>
+                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
+                    non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                <p>
+                    Make sure to keep all page content within the
+                    <code>#page-content-wrapper</code>
+                    . The top navbar is optional, and just for demonstration. Just create an element with the
+                    <code>#sidebarToggle</code>
+                    ID which will toggle the menu when clicked.
+                </p>
+                <div class="alert alert-primary" role="alert">
+                    Here's an example of how to assemble your products. Pay close attention to all the details,
+                    especially the dependencies, as they are crucial for the proper setup. Although this is not
+                    described in the documentation, it would show attention to detail if you remove this example from
+                    the homepage after use. You can simply comment it out. Don’t forget to do the same for the
+                    JavaScript code to avoid any errors due to missing dependencies.
+                </div>
+
+                <div class="alert alert-warning" role="alert">
+                    Create your own layout, don't just copy this example, use your creativity.
+                </div>
+
+                <h2>Product list example</h2>
+                <div id="products" class="d-flex gap-2">
+                     Products
+                </div> -->
+
+                <!--P1-->
+                <div class="card" style="max-width: 320px">
+                    <img src="/app/assets/images/p1.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Starbucks Cup holder</h5>
+                        <p class="card-text">Stop your hands from burning.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$2.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P2-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p2.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Outfit of the Day</h5>
+                        <p class="card-text">Get this amazing outfit with all the accessories.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$99.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P3-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p3.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Bread</h5>
+                        <p class="card-text">Freshly baked Bread</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$5.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P4-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p4.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Eyebag Remover</h5>
+                        <p class="card-text">Remove your eyebags with this amazing product.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$99.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P5-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p5.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Ashwaganda</h5>
+                        <p class="card-text">Stay energetic through out the day.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$74.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P6-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p6.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Chapstick</h5>
+                        <p class="card-text">Keep your lips from drying by using this naturally made Chapstick.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$9.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P7-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p7.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hydration Lotion</h5>
+                        <p class="card-text">Keep your skin hydrated for longer with this lotion.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$14.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P8-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p8.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">fujifilm Camera</h5>
+                        <p class="card-text">High quality camera.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$499.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P9-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p9.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Peppers</h5>
+                        <p class="card-text">Naturally grown peppers.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$0.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P10-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p10.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hublot Watch</h5>
+                        <p class="card-text">Made with care to last.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$1499.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P11-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p11.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Makeup Starter Kit</h5>
+                        <p class="card-text">Glow like you have never before with this starter kit.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$49.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                <!--P12-->
+                <div class="card" style="max-width: 320px">
+                    <img src="./assets/images/p12.jpg" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">cumber Soap</h5>
+                        <p class="card-text">Made with real cucumbers. Hydrate your skin.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$9.99</span>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light">
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
